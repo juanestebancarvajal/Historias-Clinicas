@@ -2,8 +2,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+        
 
 	<!-- blueprint CSS framework -->
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
@@ -27,23 +33,83 @@
 	</div><!-- header -->
 
 	<div id="mainmenu">
-		<?php $this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-			),
-		)); ?>
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Smart MR</a>
+                  </div>
+
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Historias Clinicas <b class="caret"></b></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Crear</a></li>
+                            <li><a href="#">Buscar</a></li>
+                            <li><a href="#">Editar</a></li>
+                          </ul>
+                      </li>
+
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Usuarios<b class="caret"></b></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Registrar</a></li>
+                            <li><a href="#">Ingresar</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="#">Contacto</a></li>
+                      <li><a href="#">Acerca de</a></li>
+                    </ul>
+
+
+                  </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
 	</div><!-- mainmenu -->
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,
 		)); ?><!-- breadcrumbs -->
 	<?php endif?>
+                <div class="menu-lateral">
+                    <div class="btn-group-vertical">
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="col-lg-3">
+                            <div class="btn-group-vertical">
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li class="active"><a href="#">Informacion General</a></li>
+                                    <li><a href="#">Motivo De La Consulta</a></li>
+                                    <li><a href="#">Enfermedad Actual</a></li>
+                                    <li><a href="#">Interrogatorio por sistema</a></li>
+                                    <li><a href="#">Antecedente</a></li>
+                                    <li><a href="#">Examen Fisico</a></li>
+                                    <li><a href="#">Resumen y opinion</a></li>
+                                    <li><a href="#">Diagnostico</a></li>
+                                </ul>
 
-	<?php echo $content; ?>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-9">
+
+                            	<?php echo $content; ?>
+                        </div>
+                        
+                    </div>
+                </div>
+
 
 	<div class="clear"></div>
 
