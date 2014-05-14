@@ -1,4 +1,1 @@
-assets/*
-!assets/.gitignore
-protected/data/*.db
 themes/classic/views/
