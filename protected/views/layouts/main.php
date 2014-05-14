@@ -27,11 +27,11 @@
 <body>
 
 <div class="container" id="page">
-
+        <!--
 	<div id="header">
 		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
 	</div><!-- header -->
-
+        
 	<div id="mainmenu">
             <nav class="navbar navbar-default" role="navigation">
                 <div class="container-fluid">
@@ -52,23 +52,22 @@
                         <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Historias Clinicas <b class="caret"></b></a>
                           <ul class="dropdown-menu">
-                            <li><a href="#">Crear</a></li>
-                            <li><a href="#">Buscar</a></li>
-                            <li><a href="#">Editar</a></li>
+                            <li><a class="btn-crear" href="#">Crear</a></li>
+                            <li><a class = "btn-editar "href="<?php echo Yii::app()->createUrl('/pacientes/admin'); ?>">Editar</a></li>
+      
                           </ul>
                       </li>
 
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Usuarios<b class="caret"></b></a>
                           <ul class="dropdown-menu">
-                            <li><a href="#">Registrar</a></li>
-                            <li><a href="#">Ingresar</a></li>
+                            <li><a href="<?php echo Yii::app()->createUrl('/users/create'); ?>">Registrar</a></li>
+                            <li><a href="<?php echo Yii::app()->createUrl('/site/login'); ?>">Ingresar</a></li>
                           </ul>
                       </li>
                       <li><a href="#">Contacto</a></li>
                       <li><a href="#">Acerca de</a></li>
                     </ul>
-
 
                   </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
@@ -89,16 +88,15 @@
                         <div class="col-lg-3">
                             <div class="btn-group-vertical">
                                 <ul class="nav nav-pills nav-stacked">
-                                    <li class="active"><a href="#">Informacion General</a></li>
-                                    <li><a href="#">Motivo De La Consulta</a></li>
-                                    <li><a href="#">Enfermedad Actual</a></li>
-                                    <li><a href="#">Interrogatorio por sistema</a></li>
-                                    <li><a href="#">Antecedente</a></li>
-                                    <li><a href="#">Examen Fisico</a></li>
-                                    <li><a href="#">Resumen y opinion</a></li>
-                                    <li><a href="#">Diagnostico</a></li>
+                                    <li class=""><a href="<?php echo Yii::app()->createUrl('/pacientes/create'); ?>">Informacion General</a></li>
+                                    <li><a href="<?php echo Yii::app()->createUrl('/consulta/create'); ?>">Motivo De La Consulta</a></li>
+                                    <li><a href="<?php echo Yii::app()->createUrl('/sintomas/create'); ?>">Enfermedad Actual</a></li>
+                                    <li><a href="<?php echo Yii::app()->createUrl('/site/enfermedad'); ?>">Interrogatorio por sistema</a></li>
+                                    <li><a href="<?php echo Yii::app()->createUrl('/site/pendiente'); ?>">Antecedente</a></li>
+                                    <li><a href="<?php echo Yii::app()->createUrl('/site/pendiente'); ?>">Examen Fisico</a></li>
+                                    <li><a href="<?php echo Yii::app()->createUrl('/site/pendiente'); ?>">Resumen y opinion</a></li>
+                                    <li><a href="<?php echo Yii::app()->createUrl('/site/pendiente'); ?>">Diagnostico</a></li>
                                 </ul>
-
                             </div>
                         </div>
                         
@@ -114,12 +112,23 @@
 	<div class="clear"></div>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-		All Rights Reserved.<br/>
+		Copyright &copy; <?php echo date('Y'); ?> Universidad EAFIT.<br/>
+		Todos los derechos reservados<br/>
 		<?php echo Yii::powered(); ?>
 	</div><!-- footer -->
 
 </div><!-- page -->
 
 </body>
+    <script>
+        $( document ).ready(function() {
+
+            $( ".btn-crear" ).click(function() {
+            $( ".btn-group-vertical" ).show( "slow", function() {});
+        });
+
+
+});
+
+    </script>
 </html>
