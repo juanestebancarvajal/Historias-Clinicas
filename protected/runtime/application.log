@@ -1,0 +1,275 @@
+2014/05/13 19:04:32 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mydb.tbl_users' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_users`.
+in C:\xampp\htdocs\Historias-Clinicas\index.php (13)
+2014/05/13 19:25:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "view/users".' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('view/users')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/view/users
+---
+2014/05/13 20:46:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/admin')
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/users/admin
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/users/1
+---
+2014/05/13 20:47:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/admin')
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/users/admin
+---
+2014/05/13 21:48:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/admin')
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/users/admin
+---
+2014/05/13 21:48:56 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/admin/use...')
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/users/admin/users/create
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/users/admin
+---
+2014/05/13 22:11:08 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/admin/use...')
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/users/admin/users/create/users/create
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/users/admin/users/create
+---
+2014/05/13 22:11:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/admin/use...')
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/users/admin/users/create/users/create/users/create
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/users/admin/users/create/users/create
+---
+2014/05/13 22:40:14 [error] [exception.CDbException] exception 'CDbException' with message 'The table "tbl_paciente" for active record class "Paciente" cannot be found in the database.' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Paciente))
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\gii\generators\crud\CrudCode.php(66): CActiveRecord::model('Paciente')
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\validators\CInlineValidator.php(42): CrudCode->validateModel('model', Array)
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CModel.php(159): CValidator->validate(Object(CrudCode), NULL)
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\gii\CCodeGenerator.php(159): CModel->validate()
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('')
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud')
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/gii/crud
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/gii/crud
+---
+2014/05/13 22:46:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "create".' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('create')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/create
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/users/create
+---
+2014/05/13 22:48:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "create".' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('create')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/create
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/users/create
+---
+2014/05/13 23:00:44 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "_content".' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\widgets\CTabView.php(214): CController->renderPartial('_content', Array)
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\widgets\CTabView.php(146): CTabView->renderBody()
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CBaseController.php(173): CTabView->run()
+#3 C:\xampp\htdocs\Historias-Clinicas\protected\views\site\enfermedad.php(20): CBaseController->widget('CTabView', Array)
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', NULL, true)
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', NULL, true)
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(782): CController->renderPartial('enfermedad', NULL, true)
+#8 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\SiteController.php(39): CController->render('enfermedad')
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionEnfermedad()
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('enfermedad')
+#14 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/enfermedad')
+#15 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/site/enfermedad
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/site/enfermedad
+---
+2014/05/13 23:27:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pendiente".' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(270): CController->missingAction('pendiente')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('pendiente')
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pendiente')
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/site/pendiente
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/site/enfermedad/users/create
+---
+2014/05/13 23:27:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pendiente".' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(270): CController->missingAction('pendiente')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('pendiente')
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pendiente')
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/site/pendiente
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/site/enfermedad/users/create
+---
+2014/05/13 23:27:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pendiente".' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(270): CController->missingAction('pendiente')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('pendiente')
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pendiente')
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/site/pendiente
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/site/pendiente
+---
+2014/05/13 23:27:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pendiente".' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(270): CController->missingAction('pendiente')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('pendiente')
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pendiente')
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/site/pendiente
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/site/pendiente
+---
+2014/05/13 23:28:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pendiente".' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(270): CController->missingAction('pendiente')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('pendiente')
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pendiente')
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/site/pendiente
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/site/pendiente
+---
+2014/05/13 23:29:24 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('pacientes/admin')
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/pacientes/admin
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/pacientes/index
+---
+2014/05/13 23:53:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "update1".' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(270): CController->missingAction('update1')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('update1')
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('consulta/update...')
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/consulta/update1
+---
+2014/05/13 23:53:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\Historias-Clinicas\protected\controllers\ConsultaController.php:157
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\ConsultaController.php(89): ConsultaController->loadModel('1')
+#1 [internal function]: ConsultaController->actionUpdate('1')
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ConsultaController), Array)
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ConsultaController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('consulta/update')
+#14 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/consulta/update/1
+---
