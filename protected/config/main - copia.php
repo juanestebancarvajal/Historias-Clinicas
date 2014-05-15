@@ -55,10 +55,10 @@ return array(
 		
 		'db'=>array(
                    
-			'connectionString' => 'pgsql:host=ec2-54-225-168-181.compute-1.amazonaws.com;port=5432;dbname=d5rrkajo0huvqf',
+			'connectionString' => 'pgsql:host=localhost;port=5432;dbname=smartMR',
 			'emulatePrepare' => true,
-			'username' => 'bbmlfoiwqlibsh',
-			'password' => 'htwMe_gXB6VRWOXuTQtQlBn7fc',
+			'username' => 'postgres',
+			'password' => 'admin',
 			'charset' => 'utf8',
 		),
 		
