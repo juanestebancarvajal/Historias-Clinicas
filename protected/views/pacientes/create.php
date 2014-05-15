@@ -16,6 +16,6 @@ $this->menu=array(
  
 ?>
 
-<h1>Create Pacientes</h1>
+<h1>Informacion General Del Paciente</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

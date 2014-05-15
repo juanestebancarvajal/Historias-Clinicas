@@ -6,12 +6,12 @@ $this->breadcrumbs=array(
 	'Consultas'=>array('index'),
 	'Manage',
 );
-
+/*
 $this->menu=array(
 	array('label'=>'List Consulta', 'url'=>array('index')),
 	array('label'=>'Create Consulta', 'url'=>array('create')),
 );
-
+*/
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
 	$('.search-form').toggle();

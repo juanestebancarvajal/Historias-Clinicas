@@ -6,12 +6,12 @@ $this->breadcrumbs=array(
 	'Sintomases'=>array('index'),
 	'Manage',
 );
-
+/*
 $this->menu=array(
 	array('label'=>'List Sintomas', 'url'=>array('index')),
 	array('label'=>'Create Sintomas', 'url'=>array('create')),
 );
-
+*/
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
 	$('.search-form').toggle();
