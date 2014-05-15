@@ -65,8 +65,8 @@
                             <li><a href="<?php echo Yii::app()->createUrl('/site/login'); ?>">Ingresar</a></li>
                           </ul>
                       </li>
-                      <li><a href="#">Contacto</a></li>
-                      <li><a href="#">Acerca de</a></li>
+                      <li><a href="<?php echo Yii::app()->createUrl('/site/contact'); ?>">Contacto</a></li>
+                      <li><a href="<?php echo Yii::app()->createUrl('/site/about'); ?>">Acerca de</a></li>
                     </ul>
 
                   </div><!-- /.navbar-collapse -->
@@ -92,7 +92,7 @@
                                     <li><a href="<?php echo Yii::app()->createUrl('/consulta/create'); ?>">Motivo De La Consulta</a></li>
                                     <li><a href="<?php echo Yii::app()->createUrl('/sintomas/create'); ?>">Enfermedad Actual</a></li>
                                     <li><a href="<?php echo Yii::app()->createUrl('/site/enfermedad'); ?>">Interrogatorio por sistema</a></li>
-                                    <li><a href="<?php echo Yii::app()->createUrl('/site/pendiente'); ?>">Antecedente</a></li>
+                                    <li><a href="<?php echo Yii::app()->createUrl('/site/enfermedad'); ?>">Antecedente</a></li>
                                     <li><a href="<?php echo Yii::app()->createUrl('/site/pendiente'); ?>">Examen Fisico</a></li>
                                     <li><a href="<?php echo Yii::app()->createUrl('/site/pendiente'); ?>">Resumen y opinion</a></li>
                                     <li><a href="<?php echo Yii::app()->createUrl('/site/pendiente'); ?>">Diagnostico</a></li>

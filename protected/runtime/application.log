@@ -985,3 +985,99 @@ REQUEST_URI=/Historias-Clinicas/index.php/sintomas/8
 in C:\xampp\htdocs\Historias-Clinicas\protected\views\sintomas\view.php (7)
 in C:\xampp\htdocs\Historias-Clinicas\protected\controllers\SintomasController.php (56)
 in C:\xampp\htdocs\Historias-Clinicas\index.php (13)
+2014/05/15 12:31:09 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[08006] [7] FATAL:  no pg_hba.conf entry for host "200.116.19.3", user "bbmlfoiwqlibsh", database "d5rrkajo0huvqf", SSL off' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\CDbConnection.php:381
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(438): CModule->getComponent('db')
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\ar\CActiveRecord.php(623): CApplication->getDb()
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\ar\CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Pacientes))
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\ar\CActiveRecord.php(402): CActiveRecord::model('Pacientes')
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\ar\CActiveRecord.php(77): CActiveRecord->getMetaData()
+#9 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\PacientesController.php(65): CActiveRecord->__construct()
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(49): PacientesController->actionCreate()
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#20 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('pacientes/creat...')
+#21 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/pacientes/create
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/
+---
+2014/05/15 13:00:18 [error] [exception.CException] exception 'CException' with message 'Property "Consulta.nombre" is not defined.' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\ar\CActiveRecord.php(143): CComponent->__get('nombre')
+#1 C:\xampp\htdocs\Historias-Clinicas\protected\views\consulta\view.php(12): CActiveRecord->__get('nombre')
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#6 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\ConsultaController.php(56): CController->render('view', Array)
+#7 [internal function]: ConsultaController->actionView('7')
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ConsultaController), Array)
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ConsultaController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#19 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('consulta/view')
+#20 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/consulta/7
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/consulta/create
+---
+2014/05/15 13:32:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users/create".' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/create')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/users/create
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/site/login
+---
+2014/05/15 13:36:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "users/create".' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/create')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/users/create
+---
+2014/05/15 13:37:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pendiente".' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(270): CController->missingAction('pendiente')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('pendiente')
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pendiente')
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/site/pendiente
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/site/contact
+---
+2014/05/15 13:37:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pendiente".' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(270): CController->missingAction('pendiente')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('pendiente')
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pendiente')
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/site/pendiente
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/site/contact
+---

@@ -11,13 +11,15 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Los campos con<span class="required">*</span>son requeridos</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'consulta'); ?>
-		<?php echo $form->textField($model,'consulta',array('size'=>60,'maxlength'=>300)); ?>
+		<?php //echo //$form->textField($model,'consulta',array('size'=>60,'maxlength'=>300,'class'=>'box')); ?>
+                <?php echo $form->textArea($model, 'consulta', array('maxlength' => 300,'cols'=>90)); ?>
+            
 		<?php echo $form->error($model,'consulta'); ?>
 	</div>
 

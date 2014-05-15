@@ -6,12 +6,7 @@ $this->breadcrumbs=array(
 	'Pacientes'=>array('index'),
 	'Manage',
 );
-/*
-$this->menu=array(
-	array('label'=>'List Pacientes', 'url'=>array('index')),
-	array('label'=>'Create Pacientes', 'url'=>array('create')),
-);
-*/
+
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
 	$('.search-form').toggle();

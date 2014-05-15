@@ -7,7 +7,7 @@
 
 ?>
 
-<h1>Resumen</h1>
+<h1>Informacion Almacenada con exito</h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
