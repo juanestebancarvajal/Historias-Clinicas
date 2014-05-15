@@ -6,11 +6,13 @@ $this->breadcrumbs=array(
 	'Sintomases'=>array('index'),
 	'Create',
 );
-
+/*
 $this->menu=array(
 	array('label'=>'List Sintomas', 'url'=>array('index')),
 	array('label'=>'Manage Sintomas', 'url'=>array('admin')),
 );
+ * *
+ */
 ?>
 
 <h1>Create Sintomas</h1>
