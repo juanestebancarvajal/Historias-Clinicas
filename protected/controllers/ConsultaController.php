@@ -70,14 +70,22 @@ class ConsultaController extends Controller
 		if(isset($_POST['Consulta']))
 		{
 			$model->attributes=$_POST['Consulta'];
+                        $model->id_paciente = Yii::app()->session['id_paciente'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
-
-		$this->render('create',array(
-			'model'=>$model,
-		));
-	}
+                
+                if(isset(Yii::app()->session['id_paciente'])){
+                    $modelo=$this->loadModelConsulta(Yii::app()->session['id_paciente']);
+                    		if($modelo===null){
+                                    $this->render('create',array('model'=>$model,));
+                                }else{
+                                    $this->render('update',array('model'=>$modelo,));
+                                }
+                }else{
+                    $this->render('create',array('model'=>$model,));
+                }
+        }
 
 	/**
 	 * Updates a particular model.
@@ -152,9 +160,13 @@ class ConsultaController extends Controller
 	 */
 	public function loadModel($id)
 	{
-		$model=Consulta::model()->findByPk($id);
-		if($model===null)
-			throw new CHttpException(404,'The requested page does not exist.');
+		$model=Consulta::model()->findByAttributes(array('id'=>$id));
+		return $model;
+	}
+        
+        public function loadModelConsulta($id)
+	{
+		$model=Consulta::model()->findByAttributes(array('id_paciente'=>$id));
 		return $model;
 	}
 

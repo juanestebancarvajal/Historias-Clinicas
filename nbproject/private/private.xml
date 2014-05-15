@@ -5,8 +5,10 @@
         <group>
             <file>file:/C:/xampp/htdocs/Historias-Clinicas/protected/views/layouts/column2.php</file>
             <file>file:/C:/xampp/htdocs/Historias-Clinicas/protected/views/site/index.php</file>
+            <file>file:/C:/xampp/htdocs/Historias-Clinicas/protected/views/pacientes/create.php</file>
             <file>file:/C:/xampp/htdocs/Historias-Clinicas/protected/views/layouts/column1.php</file>
             <file>file:/C:/xampp/htdocs/Historias-Clinicas/protected/views/layouts/main.php</file>
+            <file>file:/C:/xampp/htdocs/Historias-Clinicas/protected/views/pacientes/_form.php</file>
             <file>file:/C:/xampp/htdocs/Historias-Clinicas/protected/views/pacientes/admin.php</file>
         </group>
     </open-files>

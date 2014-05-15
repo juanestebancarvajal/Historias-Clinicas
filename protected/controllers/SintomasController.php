@@ -70,13 +70,24 @@ class SintomasController extends Controller
 		if(isset($_POST['Sintomas']))
 		{
 			$model->attributes=$_POST['Sintomas'];
+                        $model->id_paciente = Yii::app()->session['id_paciente'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
+                
+                   if(isset(Yii::app()->session['id_paciente'])){
+                        $modelo=$this->loadModelPaciente(Yii::app()->session['id_paciente']);
+                        if($modelo===null){
+                            $this->render('create',array('model'=>$model,));
+                        }else{
+                            $this->render('update',array('model'=>$modelo,));
+                        }
+                    
+                }else{
+                   $this->render('create',array('model'=>$model,));
+                }
 
-		$this->render('create',array(
-			'model'=>$model,
-		));
+	
 	}
 
 	/**
@@ -152,12 +163,15 @@ class SintomasController extends Controller
 	 */
 	public function loadModel($id)
 	{
-		$model=Sintomas::model()->findByPk($id);
-		if($model===null)
-			throw new CHttpException(404,'The requested page does not exist.');
+		$model=Sintomas::model()->findByAttributes(array('id'=>$id));
 		return $model;
 	}
-
+        
+        public function loadModelPaciente($id)
+	{
+		$model=Sintomas::model()->findByAttributes(array('id_paciente'=>$id));
+		return $model;
+	}
 	/**
 	 * Performs the AJAX validation.
 	 * @param Sintomas $model the model to be validated

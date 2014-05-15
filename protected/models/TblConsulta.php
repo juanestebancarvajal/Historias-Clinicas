@@ -1,24 +1,22 @@
 <?php
 
 /**
- * This is the model class for table "tbl_users".
+ * This is the model class for table "tbl_consulta".
  *
- * The followings are the available columns in table 'tbl_users':
- * @property string $password
- * @property string $email
+ * The followings are the available columns in table 'tbl_consulta':
  * @property integer $id
- * @property string $nombre
- * @property string $apellido
- * @property string $tipo_identificacion
- * @property string $numero_identificacion
- * @property string $fecha
+ * @property integer $id_paciente
+ * @property string $consulta
+ *
+ * The followings are the available model relations:
+ * @property TblPacientes $tblPacientes
  */
-class Users extends CActiveRecord
+class TblConsulta extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return Users the static model class
+	 * @return TblConsulta the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -30,7 +28,7 @@ class Users extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'tbl_users';
+		return 'tbl_consulta';
 	}
 
 	/**
@@ -41,10 +39,12 @@ class Users extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('password, email, nombre, apellido, tipo_identificacion, numero_identificacion, fecha', 'safe'),
+			array('consulta', 'required'),
+			array('id_paciente', 'numerical', 'integerOnly'=>true),
+			array('consulta', 'length', 'max'=>300),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('password, email, id, nombre, apellido, tipo_identificacion, numero_identificacion, fecha', 'safe', 'on'=>'search'),
+			array('id, id_paciente, consulta', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -56,6 +56,7 @@ class Users extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'tblPacientes' => array(self::HAS_ONE, 'TblPacientes', 'id'),
 		);
 	}
 
@@ -65,14 +66,9 @@ class Users extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'password' => 'Password',
-			'email' => 'Email',
 			'id' => 'ID',
-			'nombre' => 'Nombre',
-			'apellido' => 'Apellido',
-			'tipo_identificacion' => 'Tipo Identificacion',
-			'numero_identificacion' => 'Numero Identificacion',
-			'fecha' => 'Fecha',
+			'id_paciente' => 'Id Paciente',
+			'consulta' => 'Consulta',
 		);
 	}
 
@@ -87,14 +83,9 @@ class Users extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('password',$this->password,true);
-		$criteria->compare('email',$this->email,true);
 		$criteria->compare('id',$this->id);
-		$criteria->compare('nombre',$this->nombre,true);
-		$criteria->compare('apellido',$this->apellido,true);
-		$criteria->compare('tipo_identificacion',$this->tipo_identificacion,true);
-		$criteria->compare('numero_identificacion',$this->numero_identificacion,true);
-		$criteria->compare('fecha',$this->fecha,true);
+		$criteria->compare('id_paciente',$this->id_paciente);
+		$criteria->compare('consulta',$this->consulta,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

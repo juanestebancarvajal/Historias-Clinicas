@@ -70,8 +70,10 @@ class PacientesController extends Controller
 		if(isset($_POST['Pacientes']))
 		{
 			$model->attributes=$_POST['Pacientes'];
-			if($model->save())
+			if($model->save()){
+                            Yii::app()->session['id_paciente'] = $model->id;
 				$this->redirect(array('view','id'=>$model->id));
+                        }
 		}
 
 		$this->render('create',array(
@@ -87,6 +89,7 @@ class PacientesController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
+                Yii::app()->session['id_paciente'] = $id;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);

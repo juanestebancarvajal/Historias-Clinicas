@@ -5,13 +5,12 @@
  *
  * The followings are the available columns in table 'tbl_sintomas':
  * @property integer $id
- * @property string $fecha_sintoma
- * @property string $inicio_sintoma
+ * @property string $sintomas
+ * @property string $fecha_sintomas
  * @property string $evolucion
  * @property string $examenes
  * @property string $resultados
- * @property string $diagnostico
- * @property string $id_paciente
+ * @property integer $id_paciente
  */
 class Sintomas extends CActiveRecord
 {
@@ -41,10 +40,14 @@ class Sintomas extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('fecha_sintoma, inicio_sintoma, evolucion, examenes, resultados, diagnostico, id_paciente', 'safe'),
+			array('sintomas, fecha_sintomas', 'required'),
+			array('id_paciente', 'numerical', 'integerOnly'=>true),
+			array('sintomas', 'length', 'max'=>300),
+			array('evolucion, resultados', 'length', 'max'=>100),
+			array('examenes', 'length', 'max'=>200),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, fecha_sintoma, inicio_sintoma, evolucion, examenes, resultados, diagnostico, id_paciente', 'safe', 'on'=>'search'),
+			array('id, sintomas, fecha_sintomas, evolucion, examenes, resultados, id_paciente', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -66,12 +69,11 @@ class Sintomas extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'fecha_sintoma' => 'Fecha Sintoma',
-			'inicio_sintoma' => 'Inicio Sintoma',
+			'sintomas' => 'Sintomas',
+			'fecha_sintomas' => 'Fecha Sintomas',
 			'evolucion' => 'Evolucion',
 			'examenes' => 'Examenes',
 			'resultados' => 'Resultados',
-			'diagnostico' => 'Diagnostico',
 			'id_paciente' => 'Id Paciente',
 		);
 	}
@@ -88,13 +90,12 @@ class Sintomas extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('fecha_sintoma',$this->fecha_sintoma,true);
-		$criteria->compare('inicio_sintoma',$this->inicio_sintoma,true);
+		$criteria->compare('sintomas',$this->sintomas,true);
+		$criteria->compare('fecha_sintomas',$this->fecha_sintomas,true);
 		$criteria->compare('evolucion',$this->evolucion,true);
 		$criteria->compare('examenes',$this->examenes,true);
 		$criteria->compare('resultados',$this->resultados,true);
-		$criteria->compare('diagnostico',$this->diagnostico,true);
-		$criteria->compare('id_paciente',$this->id_paciente,true);
+		$criteria->compare('id_paciente',$this->id_paciente);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

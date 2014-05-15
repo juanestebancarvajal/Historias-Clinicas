@@ -48,18 +48,23 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'id',
 		'nombre',
 		'apellido',
-		'fecha',
-		'identificacion',
-		'tipo',
+		'lugar_nacimiento',
+		'fecha_nacimiento',
+		'genero',
+		/*
+		'raza',
+		'nacionalidad',
+		'estado_civil',
+		'profesion',
+		'religion',
+		'telefono',
+		'otros_lugares',
+		'escolaridad',
+		'seguridad_social',
+		'eps',
+		*/
 		array(
 			'class'=>'CButtonColumn',
 		),
 	),
 )); ?>
-<script>
-    $( ".btn-group-vertical" ).hide( "fast", function() {});
-$( document ).ready(function() {
-
-    
-});
-</script>

@@ -16,39 +16,33 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'fecha_sintoma'); ?>
-		<?php echo $form->textArea($model,'fecha_sintoma',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'fecha_sintoma'); ?>
+		<?php echo $form->labelEx($model,'sintomas'); ?>
+		<?php echo $form->textField($model,'sintomas',array('size'=>60,'maxlength'=>300)); ?>
+		<?php echo $form->error($model,'sintomas'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'inicio_sintoma'); ?>
-		<?php echo $form->textArea($model,'inicio_sintoma',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'inicio_sintoma'); ?>
+		<?php echo $form->labelEx($model,'fecha_sintomas'); ?>
+		<?php echo $form->textField($model,'fecha_sintomas'); ?>
+		<?php echo $form->error($model,'fecha_sintomas'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'evolucion'); ?>
-		<?php echo $form->textArea($model,'evolucion',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textField($model,'evolucion',array('size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'evolucion'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'examenes'); ?>
-		<?php echo $form->textArea($model,'examenes',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textField($model,'examenes',array('size'=>60,'maxlength'=>200)); ?>
 		<?php echo $form->error($model,'examenes'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'resultados'); ?>
-		<?php echo $form->textArea($model,'resultados',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textField($model,'resultados',array('size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'resultados'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'diagnostico'); ?>
-		<?php echo $form->textArea($model,'diagnostico',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'diagnostico'); ?>
 	</div>
 
 	<div class="row">

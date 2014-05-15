@@ -22,8 +22,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'motivo'); ?>
-		<?php echo $form->textArea($model,'motivo',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->label($model,'consulta'); ?>
+		<?php echo $form->textField($model,'consulta',array('size'=>60,'maxlength'=>300)); ?>
 	</div>
 
 	<div class="row buttons">

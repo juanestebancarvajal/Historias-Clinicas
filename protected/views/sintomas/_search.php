@@ -17,33 +17,28 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'fecha_sintoma'); ?>
-		<?php echo $form->textArea($model,'fecha_sintoma',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->label($model,'sintomas'); ?>
+		<?php echo $form->textField($model,'sintomas',array('size'=>60,'maxlength'=>300)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'inicio_sintoma'); ?>
-		<?php echo $form->textArea($model,'inicio_sintoma',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->label($model,'fecha_sintomas'); ?>
+		<?php echo $form->textField($model,'fecha_sintomas'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'evolucion'); ?>
-		<?php echo $form->textArea($model,'evolucion',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textField($model,'evolucion',array('size'=>60,'maxlength'=>100)); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'examenes'); ?>
-		<?php echo $form->textArea($model,'examenes',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textField($model,'examenes',array('size'=>60,'maxlength'=>200)); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'resultados'); ?>
-		<?php echo $form->textArea($model,'resultados',array('rows'=>6, 'cols'=>50)); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'diagnostico'); ?>
-		<?php echo $form->textArea($model,'diagnostico',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textField($model,'resultados',array('size'=>60,'maxlength'=>100)); ?>
 	</div>
 
 	<div class="row">

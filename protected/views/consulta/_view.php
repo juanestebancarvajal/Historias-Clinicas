@@ -13,8 +13,8 @@
 	<?php echo CHtml::encode($data->id_paciente); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('motivo')); ?>:</b>
-	<?php echo CHtml::encode($data->motivo); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('consulta')); ?>:</b>
+	<?php echo CHtml::encode($data->consulta); ?>
 	<br />
 
 

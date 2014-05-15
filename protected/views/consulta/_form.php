@@ -16,15 +16,9 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'id_paciente'); ?>
-		<?php echo $form->textField($model,'id_paciente'); ?>
-		<?php echo $form->error($model,'id_paciente'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'motivo'); ?>
-		<?php echo $form->textArea($model,'motivo',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'motivo'); ?>
+		<?php echo $form->labelEx($model,'consulta'); ?>
+		<?php echo $form->textField($model,'consulta',array('size'=>60,'maxlength'=>300)); ?>
+		<?php echo $form->error($model,'consulta'); ?>
 	</div>
 
 	<div class="row buttons">

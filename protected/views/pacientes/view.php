@@ -2,21 +2,12 @@
 /* @var $this PacientesController */
 /* @var $model Pacientes */
 
-$this->breadcrumbs=array(
-	'Pacientes'=>array('index'),
-	$model->id,
-);
 
-$this->menu=array(
-	array('label'=>'List Pacientes', 'url'=>array('index')),
-	array('label'=>'Create Pacientes', 'url'=>array('create')),
-	array('label'=>'Update Pacientes', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete Pacientes', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Pacientes', 'url'=>array('admin')),
-);
+
+
 ?>
 
-<h1>View Pacientes #<?php echo $model->id; ?></h1>
+<h1>Resumen</h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
@@ -24,8 +15,18 @@ $this->menu=array(
 		'id',
 		'nombre',
 		'apellido',
-		'fecha',
-		'identificacion',
-		'tipo',
+		'lugar_nacimiento',
+		'fecha_nacimiento',
+		'genero',
+		'raza',
+		'nacionalidad',
+		'estado_civil',
+		'profesion',
+		'religion',
+		'telefono',
+		'otros_lugares',
+		'escolaridad',
+		'seguridad_social',
+		'eps',
 	),
 )); ?>

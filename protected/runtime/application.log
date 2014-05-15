@@ -273,3 +273,715 @@ Stack trace:
 #16 {main}
 REQUEST_URI=/Historias-Clinicas/index.php/consulta/update/1
 ---
+2014/05/14 04:40:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\CDbConnection.php:381
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\gii\generators\model\ModelCode.php(57): CModule->__get('db')
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CFormModel.php(39): ModelCode->init()
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model')
+#14 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/gii/model
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/gii
+---
+2014/05/14 04:42:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\CDbConnection.php:381
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\gii\generators\model\ModelCode.php(57): CModule->__get('db')
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CFormModel.php(39): ModelCode->init()
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model')
+#14 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/gii/model
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/gii
+---
+2014/05/14 05:25:04 [error] [exception.CDbException] exception 'CDbException' with message 'The table "tbl_pacientes" for active record class "Pacientes" cannot be found in the database.' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\ar\CActiveRecord.php:2310
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Pacientes))
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\ar\CActiveRecord.php(402): CActiveRecord::model('Pacientes')
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\ar\CActiveRecord.php(77): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\PacientesController.php(136): CActiveRecord->__construct('search')
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(49): PacientesController->actionAdmin()
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#14 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('pacientes/admin')
+#15 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/pacientes/admin
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/tblUsuarios/update/1
+---
+2014/05/14 05:29:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pacientes/admin".' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('pacientes/admin')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/pacientes/admin
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/
+---
+2014/05/14 11:23:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "consulta/create".' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('consulta/create')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/consulta/create
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/pacientes/create
+---
+2014/05/14 11:25:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "consulta/create".' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('consulta/create')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/consulta/create
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/pacientes/create
+---
+2014/05/14 11:30:16 [error] [php] include(table table-bordered.php): failed to open stream: No such file or directory (C:\xampp\htdocs\Historias-Clinicas\yii\framework\YiiBase.php:421)
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\YiiBase.php(196): import()
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\zii\widgets\grid\CGridView.php(363): createComponent()
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\zii\widgets\grid\CGridView.php(334): CGridView->initColumns()
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CBaseController.php(147): CGridView->init()
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CBaseController.php(172): PacientesController->createWidget()
+#5 C:\xampp\htdocs\Historias-Clinicas\protected\views\pacientes\admin.php(69): PacientesController->widget()
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CBaseController.php(126): require()
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CBaseController.php(95): PacientesController->renderInternal()
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(869): PacientesController->renderFile()
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(782): PacientesController->renderPartial()
+#10 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\PacientesController.php(143): PacientesController->render()
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(49): PacientesController->actionAdmin()
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): PacientesController->runAction()
+#14 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#16 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): PacientesController->filterAccessControl()
+#17 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#18 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): PacientesController->runActionWithFilters()
+#20 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): PacientesController->run()
+#21 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CWebApplication->run()
+REQUEST_URI=/Historias-Clinicas/index.php/pacientes/admin
+in C:\xampp\htdocs\Historias-Clinicas\protected\views\pacientes\admin.php (69)
+in C:\xampp\htdocs\Historias-Clinicas\protected\controllers\PacientesController.php (143)
+in C:\xampp\htdocs\Historias-Clinicas\index.php (13)
+2014/05/14 11:34:43 [error] [exception.CException] exception 'CException' with message 'Property "CDetailView.itemsCssClass" is not defined.' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('itemsCssClass', 'table table-bor...')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(PacientesController), 'zii.widgets.CDe...', Array)
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#3 C:\xampp\htdocs\Historias-Clinicas\protected\views\pacientes\view.php(42): CBaseController->widget('zii.widgets.CDe...', Array)
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#8 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\PacientesController.php(56): CController->render('view', Array)
+#9 [internal function]: PacientesController->actionView('1')
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PacientesController), Array)
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PacientesController), Object(ReflectionMethod), Array)
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#21 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('pacientes/view')
+#22 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/pacientes/1
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/pacientes/admin
+---
+2014/05/14 11:39:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "consulta/create".' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('consulta/create')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/consulta/create
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/pacientes/update/1
+---
+2014/05/14 12:15:48 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  inserción o actualización en la tabla «tbl_pacientes» viola la llave foránea «id_paciente»
+DETAIL:  La llave (id)=(2) no está presente en la tabla «tbl_consulta».. The SQL statement executed was: INSERT INTO "tbl_pacientes" ("nombre", "apellido", "lugar_nacimiento", "fecha_nacimiento", "genero", "raza", "nacionalidad", "estado_civil", "profesion", "religion", "telefono", "otros_lugares", "escolaridad", "seguridad_social", "eps") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14).
+in C:\xampp\htdocs\Historias-Clinicas\protected\controllers\PacientesController.php (75)
+in C:\xampp\htdocs\Historias-Clinicas\index.php (13)
+2014/05/14 12:15:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  inserción o actualización en la tabla «tbl_pacientes» viola la llave foránea «id_paciente»
+DETAIL:  La llave (id)=(2) no está presente en la tabla «tbl_consulta».. The SQL statement executed was: INSERT INTO "tbl_pacientes" ("nombre", "apellido", "lugar_nacimiento", "fecha_nacimiento", "genero", "raza", "nacionalidad", "estado_civil", "profesion", "religion", "telefono", "otros_lugares", "escolaridad", "seguridad_social", "eps") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14)' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\PacientesController.php(75): CActiveRecord->save()
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(49): PacientesController->actionCreate()
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('pacientes/creat...')
+#14 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/pacientes/create
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/pacientes/create
+---
+2014/05/14 12:21:55 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  inserción o actualización en la tabla «tbl_pacientes» viola la llave foránea «id_paciente»
+DETAIL:  La llave (id)=(3) no está presente en la tabla «tbl_consulta».. The SQL statement executed was: INSERT INTO "tbl_pacientes" ("nombre", "apellido", "lugar_nacimiento", "fecha_nacimiento", "genero", "raza", "nacionalidad", "estado_civil", "profesion", "religion", "telefono", "otros_lugares", "escolaridad", "seguridad_social", "eps") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14).
+in C:\xampp\htdocs\Historias-Clinicas\protected\controllers\PacientesController.php (75)
+in C:\xampp\htdocs\Historias-Clinicas\index.php (13)
+2014/05/14 12:21:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  inserción o actualización en la tabla «tbl_pacientes» viola la llave foránea «id_paciente»
+DETAIL:  La llave (id)=(3) no está presente en la tabla «tbl_consulta».. The SQL statement executed was: INSERT INTO "tbl_pacientes" ("nombre", "apellido", "lugar_nacimiento", "fecha_nacimiento", "genero", "raza", "nacionalidad", "estado_civil", "profesion", "religion", "telefono", "otros_lugares", "escolaridad", "seguridad_social", "eps") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14)' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\PacientesController.php(75): CActiveRecord->save()
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(49): PacientesController->actionCreate()
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('pacientes/creat...')
+#14 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/pacientes/create
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/pacientes/create
+---
+2014/05/14 12:25:44 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  inserción o actualización en la tabla «tbl_pacientes» viola la llave foránea «id_paciente»
+DETAIL:  La llave (id)=(4) no está presente en la tabla «tbl_consulta».. The SQL statement executed was: INSERT INTO "tbl_pacientes" ("nombre", "apellido", "lugar_nacimiento", "fecha_nacimiento", "genero", "raza", "nacionalidad", "estado_civil", "profesion", "religion", "telefono", "otros_lugares", "escolaridad", "seguridad_social", "eps") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14).
+in C:\xampp\htdocs\Historias-Clinicas\protected\controllers\PacientesController.php (73)
+in C:\xampp\htdocs\Historias-Clinicas\index.php (13)
+2014/05/14 12:25:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  inserción o actualización en la tabla «tbl_pacientes» viola la llave foránea «id_paciente»
+DETAIL:  La llave (id)=(4) no está presente en la tabla «tbl_consulta».. The SQL statement executed was: INSERT INTO "tbl_pacientes" ("nombre", "apellido", "lugar_nacimiento", "fecha_nacimiento", "genero", "raza", "nacionalidad", "estado_civil", "profesion", "religion", "telefono", "otros_lugares", "escolaridad", "seguridad_social", "eps") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14)' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\PacientesController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(49): PacientesController->actionCreate()
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('pacientes/creat...')
+#14 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/pacientes/create
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/pacientes/create
+---
+2014/05/14 12:29:41 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  inserción o actualización en la tabla «tbl_pacientes» viola la llave foránea «id_paciente»
+DETAIL:  La llave (id)=(5) no está presente en la tabla «tbl_consulta».. The SQL statement executed was: INSERT INTO "tbl_pacientes" ("nombre", "apellido", "lugar_nacimiento", "fecha_nacimiento", "genero", "raza", "nacionalidad", "estado_civil", "profesion", "religion", "telefono", "otros_lugares", "escolaridad", "seguridad_social", "eps") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14).
+in C:\xampp\htdocs\Historias-Clinicas\protected\controllers\PacientesController.php (73)
+in C:\xampp\htdocs\Historias-Clinicas\index.php (13)
+2014/05/14 12:29:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23503]: Foreign key violation: 7 ERROR:  inserción o actualización en la tabla «tbl_pacientes» viola la llave foránea «id_paciente»
+DETAIL:  La llave (id)=(5) no está presente en la tabla «tbl_consulta».. The SQL statement executed was: INSERT INTO "tbl_pacientes" ("nombre", "apellido", "lugar_nacimiento", "fecha_nacimiento", "genero", "raza", "nacionalidad", "estado_civil", "profesion", "religion", "telefono", "otros_lugares", "escolaridad", "seguridad_social", "eps") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14)' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\PacientesController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(49): PacientesController->actionCreate()
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('pacientes/creat...')
+#14 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/pacientes/create
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/pacientes/create
+---
+2014/05/14 13:25:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sintomas/create".' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('sintomas/create')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/sintomas/create
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/consulta/create
+---
+2014/05/14 14:00:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\Historias-Clinicas\protected\controllers\ConsultaController.php:162
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\ConsultaController.php(94): ConsultaController->loadModel('6')
+#1 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\ConsultaController.php(79): ConsultaController->actionUpdate('6')
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(49): ConsultaController->actionCreate()
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('consulta/create')
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/consulta/create
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/pacientes/update/6
+---
+2014/05/14 14:04:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\Historias-Clinicas\protected\controllers\ConsultaController.php:169
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\ConsultaController.php(79): ConsultaController->loadModel('6')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(49): ConsultaController->actionCreate()
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('consulta/create')
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/consulta/create
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/pacientes/update/6
+---
+2014/05/14 14:05:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\Historias-Clinicas\protected\controllers\ConsultaController.php:169
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\ConsultaController.php(79): ConsultaController->loadModel('6')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(49): ConsultaController->actionCreate()
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('consulta/create')
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/consulta/create
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/pacientes/update/6
+---
+2014/05/14 14:07:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\Historias-Clinicas\protected\controllers\ConsultaController.php:170
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\ConsultaController.php(80): ConsultaController->loadModel('6')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(49): ConsultaController->actionCreate()
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('consulta/create')
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/consulta/create
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/pacientes/update/6
+---
+2014/05/14 14:11:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\Historias-Clinicas\protected\controllers\ConsultaController.php:170
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\ConsultaController.php(80): ConsultaController->loadModel('9')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(49): ConsultaController->actionCreate()
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('consulta/create')
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/consulta/create
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/pacientes/9
+---
+2014/05/14 14:12:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Thes requested page does not exist.' in C:\xampp\htdocs\Historias-Clinicas\protected\controllers\ConsultaController.php:170
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\ConsultaController.php(80): ConsultaController->loadModel('9')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(49): ConsultaController->actionCreate()
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('consulta/create')
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/consulta/create
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/pacientes/9
+---
+2014/05/14 14:12:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Thes requested page does not exist.' in C:\xampp\htdocs\Historias-Clinicas\protected\controllers\ConsultaController.php:170
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\ConsultaController.php(80): ConsultaController->loadModel('9')
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(49): ConsultaController->actionCreate()
+#2 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('consulta/create')
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/consulta/create
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/consulta/create
+---
+2014/05/14 14:22:14 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23505]: Unique violation: 7 ERROR:  llave duplicada viola restricción de unicidad «tbl_consulta_id_paciente_key»
+DETAIL:  Ya existe la llave (id_paciente)=(6).. The SQL statement executed was: INSERT INTO "tbl_consulta" ("consulta", "id_paciente") VALUES (:yp0, :yp1).
+in C:\xampp\htdocs\Historias-Clinicas\protected\controllers\ConsultaController.php (74)
+in C:\xampp\htdocs\Historias-Clinicas\index.php (13)
+2014/05/14 14:22:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23505]: Unique violation: 7 ERROR:  llave duplicada viola restricción de unicidad «tbl_consulta_id_paciente_key»
+DETAIL:  Ya existe la llave (id_paciente)=(6).. The SQL statement executed was: INSERT INTO "tbl_consulta" ("consulta", "id_paciente") VALUES (:yp0, :yp1)' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\ar\CActiveRecord.php(1023): CDbCommand->execute()
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\ar\CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\ConsultaController.php(74): CActiveRecord->save()
+#3 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(49): ConsultaController->actionCreate()
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('consulta/create')
+#14 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/consulta/create
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/consulta/create
+---
+2014/05/14 22:03:15 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\Historias-Clinicas\protected\views\sintomas\view.php:7)
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(869): SintomasController->renderFile()
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(782): SintomasController->renderPartial()
+#2 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\SintomasController.php(56): SintomasController->render()
+#3 unknown(0): SintomasController->actionView()
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): SintomasController->runAction()
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): SintomasController->filterAccessControl()
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): SintomasController->runActionWithFilters()
+#14 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): SintomasController->run()
+#15 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CWebApplication->run()
+REQUEST_URI=/Historias-Clinicas/index.php/sintomas/1
+in C:\xampp\htdocs\Historias-Clinicas\protected\views\sintomas\view.php (7)
+in C:\xampp\htdocs\Historias-Clinicas\protected\controllers\SintomasController.php (56)
+in C:\xampp\htdocs\Historias-Clinicas\index.php (13)
+2014/05/14 22:04:56 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\Historias-Clinicas\protected\views\sintomas\view.php:7)
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(869): SintomasController->renderFile()
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(782): SintomasController->renderPartial()
+#2 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\SintomasController.php(56): SintomasController->render()
+#3 unknown(0): SintomasController->actionView()
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): SintomasController->runAction()
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): SintomasController->filterAccessControl()
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): SintomasController->runActionWithFilters()
+#14 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): SintomasController->run()
+#15 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CWebApplication->run()
+REQUEST_URI=/Historias-Clinicas/index.php/sintomas/2
+in C:\xampp\htdocs\Historias-Clinicas\protected\views\sintomas\view.php (7)
+in C:\xampp\htdocs\Historias-Clinicas\protected\controllers\SintomasController.php (56)
+in C:\xampp\htdocs\Historias-Clinicas\index.php (13)
+2014/05/14 22:06:14 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\Historias-Clinicas\protected\views\sintomas\view.php:7)
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(869): SintomasController->renderFile()
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(782): SintomasController->renderPartial()
+#2 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\SintomasController.php(56): SintomasController->render()
+#3 unknown(0): SintomasController->actionView()
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): SintomasController->runAction()
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): SintomasController->filterAccessControl()
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): SintomasController->runActionWithFilters()
+#14 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): SintomasController->run()
+#15 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CWebApplication->run()
+REQUEST_URI=/Historias-Clinicas/index.php/sintomas/2
+in C:\xampp\htdocs\Historias-Clinicas\protected\views\sintomas\view.php (7)
+in C:\xampp\htdocs\Historias-Clinicas\protected\controllers\SintomasController.php (56)
+in C:\xampp\htdocs\Historias-Clinicas\index.php (13)
+2014/05/14 22:47:09 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\Historias-Clinicas\protected\views\sintomas\view.php:7)
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(869): SintomasController->renderFile()
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(782): SintomasController->renderPartial()
+#2 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\SintomasController.php(56): SintomasController->render()
+#3 unknown(0): SintomasController->actionView()
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): SintomasController->runAction()
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): SintomasController->filterAccessControl()
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): SintomasController->runActionWithFilters()
+#14 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): SintomasController->run()
+#15 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CWebApplication->run()
+REQUEST_URI=/Historias-Clinicas/index.php/sintomas/3
+in C:\xampp\htdocs\Historias-Clinicas\protected\views\sintomas\view.php (7)
+in C:\xampp\htdocs\Historias-Clinicas\protected\controllers\SintomasController.php (56)
+in C:\xampp\htdocs\Historias-Clinicas\index.php (13)
+2014/05/14 22:51:34 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\Historias-Clinicas\protected\views\sintomas\view.php:7)
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(869): SintomasController->renderFile()
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(782): SintomasController->renderPartial()
+#2 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\SintomasController.php(56): SintomasController->render()
+#3 unknown(0): SintomasController->actionView()
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): SintomasController->runAction()
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): SintomasController->filterAccessControl()
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): SintomasController->runActionWithFilters()
+#14 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): SintomasController->run()
+#15 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CWebApplication->run()
+REQUEST_URI=/Historias-Clinicas/index.php/sintomas/4
+in C:\xampp\htdocs\Historias-Clinicas\protected\views\sintomas\view.php (7)
+in C:\xampp\htdocs\Historias-Clinicas\protected\controllers\SintomasController.php (56)
+in C:\xampp\htdocs\Historias-Clinicas\index.php (13)
+2014/05/14 22:56:16 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\Historias-Clinicas\protected\views\sintomas\view.php:7)
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(869): SintomasController->renderFile()
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(782): SintomasController->renderPartial()
+#2 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\SintomasController.php(56): SintomasController->render()
+#3 unknown(0): SintomasController->actionView()
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): SintomasController->runAction()
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): SintomasController->filterAccessControl()
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): SintomasController->runActionWithFilters()
+#14 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): SintomasController->run()
+#15 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CWebApplication->run()
+REQUEST_URI=/Historias-Clinicas/index.php/sintomas/5
+in C:\xampp\htdocs\Historias-Clinicas\protected\views\sintomas\view.php (7)
+in C:\xampp\htdocs\Historias-Clinicas\protected\controllers\SintomasController.php (56)
+in C:\xampp\htdocs\Historias-Clinicas\index.php (13)
+2014/05/14 22:56:38 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\Historias-Clinicas\protected\views\sintomas\view.php:8)
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(869): SintomasController->renderFile()
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(782): SintomasController->renderPartial()
+#2 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\SintomasController.php(56): SintomasController->render()
+#3 unknown(0): SintomasController->actionView()
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): SintomasController->runAction()
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): SintomasController->filterAccessControl()
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): SintomasController->runActionWithFilters()
+#14 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): SintomasController->run()
+#15 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CWebApplication->run()
+REQUEST_URI=/Historias-Clinicas/index.php/sintomas/5
+in C:\xampp\htdocs\Historias-Clinicas\protected\views\sintomas\view.php (8)
+in C:\xampp\htdocs\Historias-Clinicas\protected\controllers\SintomasController.php (56)
+in C:\xampp\htdocs\Historias-Clinicas\index.php (13)
+2014/05/14 23:08:21 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tbl_pacientes" does not have a column named "id_paciente".' in C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\schema\CDbCommandBuilder.php:591
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\db\ar\CActiveRecord.php(1464): CDbCommandBuilder->createColumnCriteria(Object(CPgsqlTableSchema), Array, '', Array, '"t".')
+#1 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\PacientesController.php(158): CActiveRecord->findByAttributes(Array)
+#2 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\PacientesController.php(91): PacientesController->loadModel('6')
+#3 [internal function]: PacientesController->actionUpdate('6')
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PacientesController), Array)
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PacientesController), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#15 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('pacientes/updat...')
+#16 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/Historias-Clinicas/index.php/pacientes/update/6
+HTTP_REFERER=http://localhost:8080/Historias-Clinicas/index.php/pacientes/admin
+---
+2014/05/14 23:11:24 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\Historias-Clinicas\protected\views\sintomas\view.php:7)
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(869): SintomasController->renderFile()
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(782): SintomasController->renderPartial()
+#2 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\SintomasController.php(56): SintomasController->render()
+#3 unknown(0): SintomasController->actionView()
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): SintomasController->runAction()
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): SintomasController->filterAccessControl()
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): SintomasController->runActionWithFilters()
+#14 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): SintomasController->run()
+#15 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CWebApplication->run()
+REQUEST_URI=/Historias-Clinicas/index.php/sintomas/9
+in C:\xampp\htdocs\Historias-Clinicas\protected\views\sintomas\view.php (7)
+in C:\xampp\htdocs\Historias-Clinicas\protected\controllers\SintomasController.php (56)
+in C:\xampp\htdocs\Historias-Clinicas\index.php (13)
+2014/05/14 23:20:21 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\Historias-Clinicas\protected\views\sintomas\view.php:7)
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(869): SintomasController->renderFile()
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(782): SintomasController->renderPartial()
+#2 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\SintomasController.php(56): SintomasController->render()
+#3 unknown(0): SintomasController->actionView()
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): SintomasController->runAction()
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): SintomasController->filterAccessControl()
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): SintomasController->runActionWithFilters()
+#14 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): SintomasController->run()
+#15 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CWebApplication->run()
+REQUEST_URI=/Historias-Clinicas/index.php/sintomas/13
+in C:\xampp\htdocs\Historias-Clinicas\protected\views\sintomas\view.php (7)
+in C:\xampp\htdocs\Historias-Clinicas\protected\controllers\SintomasController.php (56)
+in C:\xampp\htdocs\Historias-Clinicas\index.php (13)
+2014/05/14 23:31:33 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\Historias-Clinicas\protected\views\sintomas\view.php:7)
+Stack trace:
+#0 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(869): SintomasController->renderFile()
+#1 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(782): SintomasController->renderPartial()
+#2 C:\xampp\htdocs\Historias-Clinicas\protected\controllers\SintomasController.php(56): SintomasController->render()
+#3 unknown(0): SintomasController->actionView()
+#4 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(133): SintomasController->runAction()
+#8 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CInlineFilter.php(58): SintomasController->filterAccessControl()
+#11 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CController.php(265): SintomasController->runActionWithFilters()
+#14 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(282): SintomasController->run()
+#15 C:\xampp\htdocs\Historias-Clinicas\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\Historias-Clinicas\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\Historias-Clinicas\index.php(13): CWebApplication->run()
+REQUEST_URI=/Historias-Clinicas/index.php/sintomas/8
+in C:\xampp\htdocs\Historias-Clinicas\protected\views\sintomas\view.php (7)
+in C:\xampp\htdocs\Historias-Clinicas\protected\controllers\SintomasController.php (56)
+in C:\xampp\htdocs\Historias-Clinicas\index.php (13)

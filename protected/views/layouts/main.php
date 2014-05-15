@@ -52,7 +52,7 @@
                         <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Historias Clinicas <b class="caret"></b></a>
                           <ul class="dropdown-menu">
-                            <li><a class="btn-crear" href="#">Crear</a></li>
+                            <li><a class="btn-crear" href="<?php echo Yii::app()->createUrl('/site/index'); ?>">Crear</a></li>
                             <li><a class = "btn-editar "href="<?php echo Yii::app()->createUrl('/pacientes/admin'); ?>">Editar</a></li>
       
                           </ul>

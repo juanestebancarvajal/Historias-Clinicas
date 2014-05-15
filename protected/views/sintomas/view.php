@@ -22,12 +22,11 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
-		'fecha_sintoma',
-		'inicio_sintoma',
+		'sintomas',
+		'fecha_sintomas',
 		'evolucion',
 		'examenes',
 		'resultados',
-		'diagnostico',
 		'id_paciente',
 	),
 )); ?>

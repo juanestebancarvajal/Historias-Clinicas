@@ -5,8 +5,8 @@
  *
  * The followings are the available columns in table 'tbl_consulta':
  * @property integer $id
- * @property string $id_paciente
- * @property string $motivo
+ * @property integer $id_paciente
+ * @property string $consulta
  */
 class Consulta extends CActiveRecord
 {
@@ -36,10 +36,12 @@ class Consulta extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id_paciente, motivo', 'safe'),
+			array('consulta', 'required'),
+			array('id_paciente', 'numerical', 'integerOnly'=>true),
+			array('consulta', 'length', 'max'=>300),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, id_paciente, motivo', 'safe', 'on'=>'search'),
+			array('id, id_paciente, consulta', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -62,7 +64,7 @@ class Consulta extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'id_paciente' => 'Id Paciente',
-			'motivo' => 'Motivo',
+			'consulta' => 'Consulta',
 		);
 	}
 
@@ -78,8 +80,8 @@ class Consulta extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('id_paciente',$this->id_paciente,true);
-		$criteria->compare('motivo',$this->motivo,true);
+		$criteria->compare('id_paciente',$this->id_paciente);
+		$criteria->compare('consulta',$this->consulta,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
