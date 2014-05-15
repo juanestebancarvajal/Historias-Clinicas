@@ -10,10 +10,7 @@ $this->breadcrumbs=array(
 	'Create',
 );
 
-$this->menu=array(
-	array('label'=>'List Consulta', 'url'=>array('index')),
-	array('label'=>'Manage Consulta', 'url'=>array('admin')),
-);
+
 ?>
 
 <h1>Create Consulta</h1>
